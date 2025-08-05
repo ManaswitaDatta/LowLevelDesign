@@ -1,0 +1,18 @@
+package decoratorPattern;
+
+public class Decaf extends Beverage {
+	public Decaf() {
+		description = "Decaf Coffee";
+	}
+
+	@Override
+	public String getDescription() {
+		return description;
+	}
+
+	@Override
+	public double cost() {
+		return 1.05; // Base cost for Decaf
+	}
+
+}
